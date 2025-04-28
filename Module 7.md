@@ -37,6 +37,7 @@ int main()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/f13d83f4-810c-47e1-9dc6-9337d0ad5925)
 
 Result:
@@ -75,6 +76,7 @@ int add(struct numbers n)
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/6659e157-2120-4e14-abad-4981b838a77a)
 
 Result:
@@ -166,6 +168,7 @@ int main()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/49642df8-5f3c-4cf1-a0d6-41283071407f)
 
 Result:
@@ -239,6 +242,7 @@ int main()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/d099bb3f-9823-4bde-b1c5-9f5bddfce735)
 
 Result:
