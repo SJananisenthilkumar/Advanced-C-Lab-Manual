@@ -25,6 +25,7 @@ void display()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/05b46220-a2ab-43ad-a2d1-3f26227e7e3c)
 
 Result:
@@ -58,6 +59,7 @@ void push (float data)
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/4a49246e-2b23-441c-9e10-97b69c6da95f)
 
 Result:
@@ -95,6 +97,7 @@ void display()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/91780295-4a64-4944-855b-43c6cc53ba23)
 
 Result:
@@ -130,6 +133,7 @@ void enqueue(float data)
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/1d7b2d9a-cc09-484a-91a9-7743641d635f)
 
 Result:
@@ -176,6 +180,7 @@ void dequeue()
 }
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/2ebb1725-ae1a-43cc-b9c3-244f07c0e9a7)
 
 Result:
