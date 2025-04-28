@@ -15,21 +15,49 @@ Algorithm:
 4.	Exit the program.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    switch(a)
+    {
+        case 71:
+        printf("seventy one");
+        break;
+        case 72:
+        printf("seventy two");
+        break;
+        case 73:
+        printf("seventy three");
+        break;
+        case 74:
+        printf("seventy four");
+        break;
+        case 75:
+        printf("seventy five");
+        break;
+        case 76:
+        printf("seventy six");
+        break;
+        case 77:
+        printf("seventy seven");
+        break;
+        case 78:
+        printf("seventy eight");
+        break;
+        case 79:
+        printf("seventy nine");
+        break;
+        default:
+        printf("Greater than 79");
+    }
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/474a9a82-b714-4c3d-9a9e-a5221bd87400)
 
 Result:
 Thus, the program is verified successfully
@@ -46,21 +74,31 @@ Algorithm:
 6.	End
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char a[50];
+    int c,i,j;
+    scanf("%s",a);
+    int len=strlen(a);
+    char h='0';
+    for(i=0;i<10;i++)
+    {
+        c=0;
+        for(j=0;j<len;j++)
+        {
+            if(a[j]==h)
+            c+=1;
+        }
+        printf("%d ",c);
+        h++;
+    }
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/6f7afe05-6f5d-471c-892d-4313e5031fe3)
 
 Result:
 Thus, the program is verified successfully
@@ -83,21 +121,60 @@ Free the memory allocated for each string in s Free the memory allocated for s
 7.	End
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int next_permutation(int n,char **s)
+{
+    for(int i=n-1;i>0;i--)
+        if(strcmp(s[i],s[i-1])>0)
+        {
+            int j=i+1;
+            for(;j<n;j++) if(strcmp(s[j],s[i-1])<=0) break;
+            char *t=s[i-1];
+            s[i-1]=s[j-1];
+            s[j-1]=t;
+            for(;i<n-1;i++,n--)
+            {
+                t=s[i];
+                s[i]=s[n-1];
+                s[n-1]=t;
+            }
+            return 1;
+        }
+    for(int i=0;i<n-1;i++,n--)
+    {
+        char *t=s[i];
+        s[i]=s[n-1];
+        s[n-1]=t;
+    }
+    return 0;
+}
+int main()
+{
+    char **s;
+    int n;
+    scanf("%d",&n);
+    s=calloc(n,sizeof(char*));
+    for(int i=0;i<n;i++)
+    {
+        s[i]=calloc(n,sizeof(char)*11);
+        scanf("%s",s[i]);
+    }
+    do
+    {
+        for(int i=0;i<n;i++)
+         printf("%s%c",s[i],i==n-1?'\n':' ');
+    }while(next_permutation(n,s));
+    for(int i=0;i<n;i++)
+    free(s[i]);
+    free(s);
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/c2602994-7a5c-42b8-8cd7-9b41520c1d91)
 
 Result:
 Thus, the program is verified successfully
@@ -116,21 +193,30 @@ Algorithm:
 7.	End
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    int size=2*n-1;
+    for(i=0;i<size;i++)
+    {
+        for(j=0;j<size;j++)
+        {
+            int min=i<j?i:j;
+            min=min<size-i?min:size-i-1;
+            min = min < size - j - 1 ? min : size - j - 1;
+            printf("%d ", n - min);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/f1b6e173-7e35-4589-85f4-99e1ceaff9c6)
 
 Result:
 Thus, the program is verified successfully
@@ -155,21 +241,24 @@ o	Call the square() function and display the result.
 5.	End.
 
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+void square();
+int main()
+{
+    
+    square();
+    return 0;
+}
+void square(){
+    int a;
+    scanf("%d",&a);
+    float ans = a*a;
+    printf("The square of %d is : %.2f",a,ans);
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/070b92a2-c4f3-4026-b47f-676b9f6bc513)
 
 Result:
 Thus, the program is verified successfully
