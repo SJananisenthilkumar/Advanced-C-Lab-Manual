@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/99a217f3-2e66-48cb-99e4-95322ab54c0b)
 
 EXP NO:21 C PROGRAM TO CREATE A FUNCTION TO FIND THE GREATEST NUMBER
 Aim:
